@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>GAME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="/singUp" method="post">
+            <h1>Crea tu Cuenta</h1>
+            <div class="characterSelector-container">
+
+                <ul>
+                    <li>
+                        <input type="checkbox" id="myCheckbox1"/>
+                        <label for="myCheckbox1"><img
+                                src="img/profiles/profileOne.png"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox2"/>
+                        <label for="myCheckbox2"><img
+                                src="img/profiles/profileThree.png"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox3"/>
+                        <label for="myCheckbox3"><img
+                                src="img/profiles/profileFour.png"/></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="myCheckbox4"/>
+                        <label for="myCheckbox4"><img
+                                src="img/profiles/profileTwo.png"/></label>
+                    </li>
+                </ul>
+            </div>
+            <input name="name" type="text" placeholder="Username"/>
+            <input name="email" type="email" placeholder="Email"/>
+            <input name="password" type="password" placeholder="Password"/>
+            <div>
+                <button name="button" type="submit" class="button" onclick="myFunction()">REGISTRARSE</button>
+            </div>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="/postlogin" method="post">
+            <h1>Iniciar Sesión</h1>
+            <div class="register-container">
+                <img src="img/profiles/general.jpg">
+            </div>
+            <input name="email" type="email" placeholder="Email"/>
+            <input name="password" type="password" placeholder="Password"/>
+            <button name="button" type="submit">ENTRAR</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>¡Bienvenide!</h1>
+                <p>
+                    [texto]
+                </p>
+                <button class="button" id="signIn">Empezar</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>¡Estás de vuelta!</h1>
+                <p>¿No tienes cuenta?</br>¿Quieres jugar?</p>
+                <button class="button" id="signUp">Registrarte</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/event.js"></script>
+<script>
+    function myFunction() {
+        alert('Entra ahora desde "Iniciar Sesion" :) ');
+    }
+</script>
+</body>
+</html>

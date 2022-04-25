@@ -1,0 +1,24 @@
+image-rendering
+https://css-tricks.com/almanac/properties/i/image-rendering/
+
+hover
+https://developer.mozilla.org/es/docs/Web/CSS/:hover
+
+scale
+https://developer.mozilla.org/es/docs/Web/CSS/transform-function/scale
+
+Manage Game User Profiles with MongoDB, Phaser, and JavaScript
+https://www.mongodb.com/developer/how-to/manage-game-user-profiles-mongodb-phaser-javascript/
+
+DTO
+https://www.baeldung.com/java-dto-pattern
+
+codigo:
+<input type="image" src="img/profiles/profileOne.png"/>
+<input type="image" src="img/profiles/profileThree.png"/>
+                <input type="image" src="img/profiles/profileFour.png"/>
+                <input type="image" src="img/profiles/profileTwo.png"/>
+
+370 horas / 8 = 46,25
+46x8= 368
+2horas de resto
