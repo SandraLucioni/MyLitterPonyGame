@@ -20,9 +20,13 @@ public class Statistics {
     @NotNull
     private String id;
 
+    //popularidad
     private int popularity;
+    //conocimiento
     private int knowledge;
+    //diversion
     private int fun;
+    //dinero
     private long money;
 
 }

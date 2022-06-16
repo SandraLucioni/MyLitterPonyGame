@@ -15,4 +15,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class UserDTO {
     private String name;
     private UserPlayer userPlayer;
+
+    public UserDTO(String name, UserPlayer userPlayer) {
+        this.name = name;
+        this.userPlayer = userPlayer;
+    }
 }

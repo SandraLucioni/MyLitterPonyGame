@@ -1,0 +1,261 @@
+/* importar fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    background-image: url("../../img/backgrounds/profile.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    color:  #FFB6C1 ;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color:  #DAF7A6;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.container {
+    background:   #fae5d3 ;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+/* img navbar */
+.imgNav{
+    height: 30px;
+    width: 30px;
+}
+
+/* NAVBAR */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+h3 {
+    margin-block-end: 0px;
+}
+.menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 250px;
+    margin-right: 1100px;
+    background-color: #fae5d3;
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
+}
+
+.menu.settings {
+    width: 300px !important;
+}
+.menu-list {
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+.menu-list, ul {
+    list-style-type: none;
+}
+.menu-list + .menu-list {
+    border-top: 1px solid #ddd;
+}
+
+.menu-sub-list:hover {
+    display: flex;
+}
+.menu-item {
+    position: relative;
+}
+.menu-button {
+    font: inherit;
+    color: inherit;
+    outline: none;
+    border: 0;
+    padding: 8px 8px;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 8px;
+    /*display: flex;*/
+    align-items: center;
+    position: relative;
+    background-color: #f6d7d7;
+    cursor: pointer;
+}
+
+.context-buttons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.context-buttons span {
+    padding-left: 40px;
+    margin-right: 10px;
+}
+.context-button {
+    font: inherit;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
+.settings-button svg {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+/* .yeeet*/
+
+.context-buttons span {
+    padding-left: 40px;
+    margin-right: 10px;
+}
+.context-button {
+    font: inherit;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color:  #f6d7d7;
+    cursor: pointer;
+}
+
+/* SPEECH TEXT BOX*/
+
+.text span {
+    opacity: 0;
+}
+.text span.revealed {
+    opacity: 1;
+}
+.text span.green {
+    color: #27ae60;
+}
+.text span.red {
+    color: #ff0000;
+}
+
+.text {
+    font-size: 6vw;
+    word-spacing: 0.2em;
+    background: #f6d7d7;
+    padding: 10px;
+    position:relative;
+    line-height: 0em;
+    width: 660px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.corner {
+    position:absolute;
+    width: 10vw;
+    right:2vw;
+    bottom:0;
+    transform: translateY(80%);
+}
+
+/* BOXES */
+
+.answersBoxes{
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.boxes{
+    background-color: #f6d7d7;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 250px;
+    margin-top: 50px;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+#box1{
+    margin-left: 120px;
+}
+
+#box2{
+    margin-left: 320px;
+}
+
+#box3{
+    margin-left: 520px;
+}
+
+/* LIVE BARS*/
+
+.menuLive{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    margin-left: 1100px;
+    background-color: #fae5d3;
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
+    margin-bottom: 250px;
+}
+
+.abilities {
+    width: 200px;
+    margin-top: 40px;
+    margin-inline: 5px;
+}
+
+.w3-round-xlarge{
+    margin: 10px;
+}

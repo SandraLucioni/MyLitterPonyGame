@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Lobster', cursive;
-    background-image: url("../img/backgrounds/profile.jpg");
+    background-image: url("../../img/backgrounds/profile.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@ a {
 .container {
     background:   #fae5d3 ;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0, 10px 10px rgb(32, 13, 58);
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
     position: relative;
     overflow: hidden;
     width: 768px;

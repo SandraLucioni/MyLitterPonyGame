@@ -1,0 +1,217 @@
+/* importar fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    background-image: url("../../img/backgrounds/profile.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    font-weight: bold;
+    color:  #FFB6C1 ;
+    float: right;
+    margin-right: 510px;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color:  #DAF7A6;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.container {
+    background:   #fae5d3 ;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(218, 112, 214, 0.25), 0 10px 10px rgb(32, 13, 58);
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    height: 480px;
+    margin-bottom: 100px;
+    overflow: auto;
+}
+
+input{
+    background: rgb(218, 112, 214, 0.1);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 15px;
+    width: 60%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+label{
+    display: block;
+    position: relative;
+    border-radius: 50px;
+    margin-left: 30px;
+}
+
+.sendButton{
+    border-radius: 20px;
+    border: 1px solid rgb(156, 140, 178);
+    background: #FFB6C1;
+    color: rgb(156, 140, 178);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* BACK BUTTON */
+
+.context-button {
+    font: inherit;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color:  #f6d7d7;
+    cursor: pointer;
+    margin: 20px;
+    border: 0;
+
+}
+
+/* FORM */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 45px;
+}
+
+.characterSelector-container input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+}
+
+.characterSelector-container label {
+    /*border: 1px solid #DAF7A6;*/
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.characterSelector-container label:before {
+    background-color: #fae5d3;
+    color: #fae5d3;
+    content: " ";
+    display: block;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+.characterSelector-container img {
+    height: 45px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    width: 49px;
+}
+
+:checked + label {
+    border-color: #fae5d3;
+    background: #FFB6C1;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px 2px rgba(218, 247, 166, 0.68);
+}
+
+:checked + label:before {
+    /*content: "✓";
+    background-color: #FFB6C1;
+    transform: scale(1);*/
+}
+
+:checked + label img {
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+/* scale */
+
+.characterSelector-container input{
+    text-align: center;
+    display: inline-block;
+    padding: 0px;
+}
+
+.characterSelector-container label:hover{
+    transform: scale(3, 3);
+    transform-origin: bottom;
+    background: #FFB6C1;
+}
+
+/* scroll bar*/
+
+.scrollbar
+{
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #f5ccdb;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    border-radius: 50px;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgb(204, 185, 243);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    border-radius: 50px;
+    -webkit-box-shadow: inset 0 0 6px rgb(241, 169, 198);
+    background-color: #f5ccdb;
+}
+

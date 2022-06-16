@@ -27,13 +27,13 @@ public class UserLoginService {
         return userRepository.findByEmailAndPassword(email, password);
     }
 
-    private User searchByUsernameAndPassword(String username, String password){
+    private User searchByNameAndPassword(String username, String password){
         return userRepository.findByEmailAndPassword(username, password);
     }
 
     public User searchLoginUser(String one, String two){
         if (one.contains("@"))  return searchByEmailAndPassword(one, two);
-        return searchByUsernameAndPassword(one, two);
+        return searchByNameAndPassword(one, two);
     }
 
 }

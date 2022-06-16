@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="es" xmlns:th="https://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <title>GAME</title>
@@ -10,12 +9,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
     </style>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" th:href="@{/css/login/login-style.css}">
 </head>
 <body>
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="/singUp" method="post">
+        <form th:action="@{/singUp}" method="post">
             <h1>Crea tu Cuenta</h1>
             <div class="characterSelector-container">
 
@@ -23,22 +22,22 @@
                     <li>
                         <input type="checkbox" id="myCheckbox1"/>
                         <label for="myCheckbox1"><img
-                                src="img/profiles/profileOne.png"/></label>
+                                th:src="@{/img/profiles/profileOne.png}"/></label>
                     </li>
                     <li>
                         <input type="checkbox" id="myCheckbox2"/>
                         <label for="myCheckbox2"><img
-                                src="img/profiles/profileThree.png"/></label>
+                                th:src="@{/img/profiles/profileThree.png}"/></label>
                     </li>
                     <li>
                         <input type="checkbox" id="myCheckbox3"/>
                         <label for="myCheckbox3"><img
-                                src="img/profiles/profileFour.png"/></label>
+                                th:src="@{/img/profiles/profileFour.png}"/></label>
                     </li>
                     <li>
                         <input type="checkbox" id="myCheckbox4"/>
                         <label for="myCheckbox4"><img
-                                src="img/profiles/profileTwo.png"/></label>
+                                th:src="@{/img/profiles/profileTwo.png}"/></label>
                     </li>
                 </ul>
             </div>
@@ -51,10 +50,10 @@
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="/postlogin" method="post">
+        <form th:action="@{/postlogin}" method="post">
             <h1>Iniciar Sesión</h1>
             <div class="register-container">
-                <img src="img/profiles/general.jpg">
+                <img th:src="@{/img/profiles/general.jpg}">
             </div>
             <input name="email" type="email" placeholder="Email"/>
             <input name="password" type="password" placeholder="Password"/>
@@ -79,7 +78,8 @@
     </div>
 </div>
 
-<script src="js/event.js"></script>
+<script th:src="@{/js/event.js}"></script>
+<script th:src="@{/js/profile/index.js}" type="module"></script>
 <script>
     function myFunction() {
         alert('Entra ahora desde "Iniciar Sesion" :) ');

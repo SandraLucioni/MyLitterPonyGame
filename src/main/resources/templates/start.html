@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" th:href="https://www.w3schools.com/lib/w3-colors-food.css">
+    <link rel="stylesheet" th:href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" th:href="@{/static/css/menu/menu-style.css}">
+</head>
+<body>
+
+<div class="menu">
+    <ul class="menu-list">
+        <li class="menu-item context-buttons">
+            <button class="context-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
+            </button>
+            <button class="context-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                </svg>
+            </button>
+            <button class="context-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+                    <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                </svg>
+            </button>
+            <button class="context-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                </svg>
+            </button>
+
+        </li>
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Rainbow Dash</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/rainbowDash/rd-side.png}"/></span>
+        </button></li>
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Twilight</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/twilightSparkle/t-simle.png}"/></span>
+        </button></li>
+
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Futtershy</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/fluttershy/f-chill.png}"/></span>
+        </button></li>
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Pinkie Pie</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/pinkiePie/pp-tail.png}"/></span>
+        </button></li>
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Apple Jack</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/appleJack/ap-side.png}"/></span>
+        </button></li>
+    </ul>
+    <ul class="menu-list">
+        <li class="menu-item"><button class="menu-button">
+            <span>Rarity</span>
+            <span><img class="imgNav" th:src="@{/static/img/characters/Rarity/r-side.png}"/></span>
+        </button></li>
+    </ul>
+</div>
+
+<div class="container" id="container">
+    <div class="text">
+        <svg class="corner" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <div class="aswersBoxes">
+
+        <button id="box1" class="boxes">
+            <p id="option1"></p>
+        </button>
+
+        <button id="box2" class="boxes">
+            <p id="option2"></p>
+        </button>
+
+        <button id="box3" class="boxes">
+            <p id="option3"></p>
+        </button>
+    </div>
+
+</div>
+
+<div class="menuLive">
+
+    <div class="abilities">
+        <div class="w3-2021-buttercream w3-round-xlarge">
+            <div class="w3-container w3-food-mint w3-round-xlarge" style="width:30%"> dinero</div>
+        </div>
+        <div class="w3-2021-buttercream w3-round-xlarge">
+            <div class="w3-container w3-food-grape w3-round-xlarge" style="width:30%"> Conocimiento</div>
+        </div>
+        <div class="w3-2021-buttercream w3-round-xlarge">
+            <div class="w3-container w3-food-salmon w3-round-xlarge" style="width:90%"> Popularidad</div>
+        </div>
+        <div class="w3-2021-buttercream w3-round-xlarge">
+            <div class="w3-container w3-food-raspberry w3-round-xlarge" style="width:30%"> Diversión</div>
+        </div>
+    </div>
+
+</div>
+
+<script th:src="@{/static/js/speechTextBox/event.js}"></script>
+</body>
+</html>

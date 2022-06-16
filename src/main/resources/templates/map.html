@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maps-sdk.trimblemaps.com/v3/trimblemaps-3.5.0.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="../static/css/map/map-style.css">
+</head>
+<body>
+
+<div class="container" id="container ">
+
+
+
+    <img src="../static/img/backgrounds/ponyville.jpg" alt="Workplace" usemap="#image-map" width="100%" height="100%">
+
+    <map name="image-map">
+        <area class="places" onmouseover="writeText('Granero')" target="_blank" alt="Granero" title="Granero" coords="-80, 39, 44" shape="circle">
+        <area class="places" onmouseover="writeText('Pastelería')" target="_blank" alt="Pastelería" title="Pateleria" coords="-79, 40, 44" shape="circle">
+        <area class="places" onmouseover="writeText('Sastrería')" target="_blank" alt="Sastrería" title="Sastreria" coords="-76, 39, 44" shape="circle">
+        <area class="places" onmouseover="writeText('Palacio')" target="_blank" alt="Palacio" title="Palacio" coords="-76, 41, 44" shape="circle">
+        <area class="places" onmouseover="writeText('Biblioteca')" target="_blank" alt="Biblioteca" title="biblioteca" coords="-77, 40, 44" shape="circle">
+    </map>
+
+</div>
+
+<div class="menu">
+    <p id="desc">Pasa el ratón por la imagen para saber los lugares que hay.</p>
+</div>
+
+<script>
+    function writeText(txt) {
+        document.getElementById("desc").innerHTML = txt;
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -27,4 +27,11 @@ public class User {
     private String email;
 
     private UserPlayer userPlayer;
+
+    public User(String password, String name, String photoProfile, String email) {
+        this.password = password;
+        this.name = name;
+        this.photoProfile = photoProfile;
+        this.email = email;
+    }
 }
