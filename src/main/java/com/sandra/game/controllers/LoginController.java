@@ -40,11 +40,10 @@ public class LoginController {
         return "login";
     }
 
-    @PostMapping("/postlogin")
+    @PostMapping("/bienvenide")
     public String enterAccount(HttpServletRequest request,
                                @RequestParam String name,
-                               @RequestParam String password,
-                               @RequestParam String button) {
+                               @RequestParam String password) {
 
         HttpSession session = request.getSession(); //inicia sesion
 

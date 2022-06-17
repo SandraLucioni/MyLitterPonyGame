@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -26,7 +27,7 @@ public class User {
     @Email
     private String email;
 
-    private UserPlayer userPlayer;
+    private List<GameStatus> gameStatuses;
 
     public User(String password, String name, String photoProfile, String email) {
         this.password = password;

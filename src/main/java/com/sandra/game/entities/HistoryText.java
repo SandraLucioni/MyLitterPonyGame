@@ -7,11 +7,13 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor
-@Document(collection = "decisions")
+@Document(collection = "history")
 @Getter
 @Setter
 public class HistoryText{
@@ -20,5 +22,11 @@ public class HistoryText{
         @NotNull
         private String id;
 
+        @GeneratedValue(strategy = GenerationType.SEQUENCE)
+        private int index;
+
         private String question;
+        private String answerOne;
+        private String answerTwo;
+        private String answerThree;
 }

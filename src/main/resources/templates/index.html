@@ -14,7 +14,7 @@
 <body>
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form th:action="@{/singUp}" method="post">
+        <form th:action="@{/registro}" method="post">
             <h1>Crea tu Cuenta</h1>
             <div class="characterSelector-container">
 
@@ -50,14 +50,14 @@
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form th:action="@{/postlogin}" method="post">
+        <form th:action="@{/bienvenide}" method="post">
             <h1>Iniciar Sesión</h1>
             <div class="register-container">
                 <img th:src="@{/img/profiles/general.jpg}">
             </div>
-            <input name="email" type="email" placeholder="Email"/>
+            <input name="email" type="text" placeholder="Email"/>
             <input name="password" type="password" placeholder="Password"/>
-            <button name="button" type="submit">ENTRAR</button>
+            <button name="button" type="submit" th:href="start.html">ENTRAR</button>
         </form>
     </div>
     <div class="overlay-container">

@@ -89,20 +89,21 @@
 <div class="container" id="container">
     <div class="text">
         <svg class="corner" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+        <p th:text="${question}"></p>
     </div>
 
     <div class="aswersBoxes">
 
         <button id="box1" class="boxes">
-            <p id="option1"></p>
+            <p id="option1" th:text="${answerOne}"></p>
         </button>
 
         <button id="box2" class="boxes">
-            <p id="option2"></p>
+            <p id="option2" th:value="${answerTwo}"></p>
         </button>
 
         <button id="box3" class="boxes">
-            <p id="option3"></p>
+            <p id="option3" th:value="${answerThree}"></p>
         </button>
     </div>
 

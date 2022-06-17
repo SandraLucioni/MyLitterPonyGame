@@ -20,8 +20,6 @@ public class Decisions {
     @NotNull
     private String id;
 
-    private String optionTextOne;
-    private String optionTextTwo;
-    private String optionTextThree;
+    private String optionText;
     private String question;
 }

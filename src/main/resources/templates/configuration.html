@@ -2,7 +2,7 @@
 <html lang="es" xmlns:th="https://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
-    <title>Menu</title>
+    <title>Configuración</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,6 +59,18 @@
             <input name="email" type="email" placeholder="Email" th:value="${email}"/>
             <label>Contraseña: </label>
             <input name="password" type="password" placeholder="Password" th:value="${password}"/>
+
+            <label>Pregunta:</label>
+            <textarea name="question"></textarea>
+
+            <label>Respuesta 1:</label>
+            <textarea name="answerOnes"></textarea>
+
+            <label>Respuesta 2:</label>
+            <textarea name="answerTwo"></textarea>
+
+            <label>Respuesta 3:</label>
+            <textarea name="answerThree"></textarea>
             <div>
                 <button name="button" type="submit" class="sendButton" onclick="myFunction()">Guardar</button>
             </div>

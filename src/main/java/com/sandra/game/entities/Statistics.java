@@ -26,7 +26,5 @@ public class Statistics {
     private int knowledge;
     //diversion
     private int fun;
-    //dinero
-    private long money;
 
 }
